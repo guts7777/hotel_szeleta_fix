@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #ff7f00;
+    --secondary-color: #ffffff;
+    --accent-color: #ff4500;
+    --text-color: #ffffff;
+    --background-color: #000000;
+    --review-text-color: #333333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background: var(--background-color) url(kepek/hatter.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.topnav {
+    background-color: rgba(255, 127, 0, 0.8);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.topnav a:hover, .topnav a.active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 127, 0, 0.3);
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.review {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: var(--review-text-color);
+}
+
+.review blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+.review footer {
+    text-align: right;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#google_map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: var(--review-text-color);
+}
+
+.contact-highlight {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 4px solid var(--accent-color);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+    
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

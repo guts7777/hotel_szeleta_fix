@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel Szeleta - A peaceful retreat near Bükki National Park, close to Lillafüred">
+    <title>Hotel Szeleta - English</title>
+    <link rel="stylesheet" href="stiluslap.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="kepek/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="topnav" aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="rolunk.html">About Us</a>
+            <a href="szolgaltatas.html">Services</a>
+            <a href="latnivalok.html">Attractions</a>
+            <a href="galeria.html">Gallery</a>
+            <a href="arak.html">Prices</a>
+            <a href="ajanlas.html">Offers/Booking</a>
+            <a href="eljutas.html">Directions</a>
+            <a class="active" href="">English</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="kepek/logo.png" alt="Hotel Szeleta logo" class="logo">
+        
+        <h1>Hotel Szeleta ***</h1>
+
+        <p>Hotel Szeleta*** is in Miskolc-Alsóhámor, inside the Bükk Mountains National Park, just 1 km from Lillafüred and 10 km from Miskolc city centre.</p>
+
+        <h2>Sights around Hotel Szeleta</h2>
+
+        <p>The hotel is extremely well located with many attractions within easy reach: the Lillafüred Forest Railway, the Szeleta Cave, the István Dripstone Cave, Lake Hámor, the Szinva waterfall, the preserved old ironworks, the Trout Farm in Garadna, and the City Zoo, all of which can be reached on foot. Short bus rides or car trips will get you to the famous Thermal Cave Baths in Tapolca, the Diósgyőr Castle, the Bánkút Ski Centre and other well-known sights.</p>
+
+        <h2>The Hotel</h2>
+
+        <p>The Hotel*** has 22 twin-bedded rooms and 3 suites. Guarded and partly-covered parking is provided for both cars and coaches. To make your stay with us that little bit more pleasant, all rooms have colour TV, mini-bar, telephone, en suite bathroom with shower and toilet, and Wi-Fi+PC Internet access. Included in the price of the room is a filling smorgasbord-style buffet breakfast.</p>
+
+        <p>A large, separate, air-conditioned room is available for family functions, conferences, lectures and presentations. The room will take 35-40 people, and is fully equipped with projector, flipchart and home cinema system, etc.</p>
+
+        <p>The price includes the breakfast, sauna, salt cave, outdoor pool, WiFi internet access services, parking, VAT and “DISCOUNT”.</p>
+
+        <p>Additional cost the Tourism Tax (“IFA” in hungarian) which is 450,-HUF/person/night (only above 18 years of age).</p>
+
+        <p>Check in time: from 2pm. Check out time: till 10am. The breakfast time is from 07:00 till 9:30. o’clock.</p>
+
+        <h2>Children discounts:</h2>
+
+        <p>The children below the age of 4 who stay with their parents room get 100%, from 4 to 12 years get 50% discount from extra bed costs. If one of the parents stays with a child in 1 room or 2 parents and 2 children stay in 2 rooms, we can give the discount (50%) from the original price of double room for 1 person and double room for 2 people.</p>
+
+        <h2>Group discounts:</h2>
+
+        <p>Unique agreement based upon negotiations in advance.</p>
+
+        <p>Between 01. May 2025. – 30. September 2025. we can accept reservations from you for minimum two days, in case your booking includes Friday or Saturday or all peak seasons*. Between 17. Apr.. 2025. – 20. Apr. 2025. we can accept reservations from you for minimum three days.</p>
+
+        <p>Because it is located at the eastern gateway to the Bükk Mountains, nestling in a beautiful valley surrounded by forests and on the banks of the river Szinva, Hotel Szeleta*** is perfect for all lovers of nature, tourism, winter sports and fishing. It’s also excellent for business people visiting Miskolc – after a tiring day what could be better for refreshing yourself and recharging your batteries than a few hours spent in beautiful countryside!</p>
+
+        <div class="image-gallery">
+            <img src="kepek/a_hotel.png" alt="Hotel Image">
+            <img src="kepek/rolunk1.png" alt="About Us Image 1">
+            <img src="kepek/rolunk2.png" alt="About Us Image 2">
+            <img src="kepek/belulrol1.jpg" alt="Interior Image 1">
+            <img src="kepek/belulrol2.jpg" alt="Interior Image 2">
+            <img src="kepek/kivulrol1.jpg" alt="Exterior Image 1">
+            <img src="kepek/kivulrol2.jpg" alt="Exterior Image 2">
+        </div>
+
+        <form action="/submit-form" method="post">
+
+            <label for="arrival">Arrival Date *</label>
+            <input type="date" id="arrival" name="arrival" required><br>
+        
+            <label for="departure">Departure Date *</label>
+            <input type="date" id="departure" name="departure" required><br>
+        
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required><br>
+        
+            <label for="address">Address * (postal code, city, street, house number)</label>
+            <input type="text" id="address" name="address" required><br>
+        
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required><br>
+        
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required><br>
+        
+            <label for="room-type">Room Type *</label>
+            <select id="room-type" name="room-type" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select><br>
+        
+            <label for="extra-beds">Additional Guest Accommodation</label><br>
+            <input type="checkbox" id="extra-bed-1" name="extra-beds" value="1"> 1 extra bed<br>
+            <input type="checkbox" id="extra-bed-2" name="extra-beds" value="2"> 2 extra beds (only in suite)<br>
+            <input type="checkbox" id="extra-bed-3" name="extra-beds" value="3"> 3 extra beds (only in suite)<br>
+            <input type="checkbox" id="baby-bed-1" name="baby-beds" value="1"> 1 baby bed<br>
+            <input type="checkbox" id="baby-bed-2" name="baby-beds" value="2"> 2 baby beds<br>
+        
+            <label for="adults">Adults (13 years and older):</label>
+            <input type="number" id="adults" name="adults" min="1" required><br>
+        
+            <label for="children-5-12">Children (ages 5-12):</label>
+            <input type="number" id="children-5-12" name="children-5-12" min="0"><br>
+        
+            <label for="children-0-4">Children (ages 0-4):</label>
+            <input type="number" id="children-0-4" name="children-0-4" min="0"><br>
+        
+            <label for="payment-method">Payment Method</label><br>
+            <input type="radio" id="cash" name="payment-method" value="cash"> Cash<br>
+            <input type="radio" id="card" name="payment-method" value="card"> Credit Card<br>
+            <input type="radio" id="transfer" name="payment-method" value="transfer"> Prepayment<br>
+            <input type="radio" id="otp" name="payment-method" value="otp"> OTP SZÉP Card<br>
+            <input type="radio" id="mkb" name="payment-method" value="mkb"> MKB SZÉP Card<br>
+            <input type="radio" id="kh" name="payment-method" value="kh"> K&H SZÉP Card<br>
+        
+            <label for="comments">Comments (group inquiries or special requests)</label><br>
+            <textarea id="comments" name="comments"></textarea><br>
+        
+            <input type="submit" value="Submit">
+        
+        </form>        
+
+        <section id="accepted-cards">
+            <h2>Accepted Card Types</h2>
+            <div class="gallery-container" aria-label="Accepted credit cards and payment methods">
+                <img src="kepek/kartya1.jpg" alt="Visa Card">
+                <img src="kepek/kartya2.jpg" alt="Mastercard">
+                <img src="kepek/kartya3.jpg" alt="American Express">
+                <img src="kepek/kartya4.jpg" alt="SZÉP Card">
+                <img src="kepek/kartya5.jpg" alt="Maestro">
+                <img src="kepek/kartya6.jpg" alt="PayPass">
+                <img src="kepek/kartya7.jpg" alt="Apple Pay">
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Hotel Szeleta. All rights reserved.</p>
+    </footer>
+</body>
+</html>
